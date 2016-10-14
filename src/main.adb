@@ -1,12 +1,10 @@
 with Ada.Numerics.Generic_Elementary_Functions;
 with Ada.Text_IO;
 with Ada.Float_Text_IO;
+with Shapes_Circle;
+with Shapes_Point; use Shapes_Point;
 procedure Main is
-   -- point struct
-   type Point is record
-      X : Integer;
-      Y : Integer;
-   end record;
+
    -- triangle struct
    type Triangle is record
       A : Point;
@@ -64,6 +62,7 @@ procedure Main is
    --
    function Get_Triangle_Ara_By_Its_Angles (T: Triangle) return Float is
    begin
+      return 0.0;
    end Get_Triangle_Ara_By_Its_Angles;
 
 
