@@ -1,18 +1,12 @@
 with Ada.Numerics.Generic_Elementary_Functions;
 with Ada.Text_IO;
 with Ada.Float_Text_IO;
-with Shapes_Circle;
 with Shapes_Point; use Shapes_Point;
+with Shapes_Triangle; use Shapes_Triangle;
 procedure Main is
 
-   -- triangle struct
-   type Triangle is record
-      A : Point;
-      B : Point;
-      C : Point;
-   end record;
    -- triangle var
-   Triangle_A : Triangle := ((0, 0), (5, 5), (10, 0));
+   Triangle_A : Triangle := ((0.0, 0.0), (5.0, 5.0), (10.0, 0.00));
 
    --
    -- function to compute line length beyween 2 given points

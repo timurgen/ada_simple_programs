@@ -2,8 +2,8 @@ package Shapes_Point is
 
    -- point struct
    type Point is record
-      X : Integer;
-      Y : Integer;
+      X : Float;
+      Y : Float;
    end record;
 
 end Shapes_Point;
