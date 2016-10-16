@@ -9,4 +9,5 @@ package Shapes_Triangle is
       C : Point;
    end record;
 
+   function Get_Triangle_Area_By_Its_Sides (T : Triangle) return Float;
 end Shapes_Triangle;
