@@ -23,7 +23,9 @@ package body Shapes_Line is
       -- TODO
       return True;
    end Intersect;
-
+   ----------
+   --
+   ----------
    function Get_X_Projection_Length (Line: Line_Straight) return Float is
    begin
       return Line.B.X - Line.A.X;

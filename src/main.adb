@@ -5,6 +5,7 @@ with Shapes_Point; use Shapes_Point;
 with Shapes_Triangle; use Shapes_Triangle;
 with Shapes_Line;
 with Shapes_Line; use Shapes_Line;
+with Shapes_Circle; use Shapes_Circle;
 procedure Main is
 
    -- triangle var
