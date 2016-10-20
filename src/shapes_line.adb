@@ -9,10 +9,13 @@ package body Shapes_Line is
       package Float_Func is new Ada.Numerics.Generic_Elementary_Functions
         (Float_Type => Float);
       use Float_Func;
+      DX: Float;--x coordinate projection
+      DY: Float;--y coordinate projection
    begin
+      DX:= B.X - A.X;
+      DY:= B.Y - A.Y;
       -- AB = √(xb - xa)**2 + (yb - ya)**2
-      return Sqrt ((Float (B.X) - Float (A.X))**2) +
-        ((Float (B.Y) - Float (A.Y))**2);
+      return Sqrt((DX**2+DY**2));
    end Get_Line_Length;
    pragma Inline(Get_Line_Length);
 
