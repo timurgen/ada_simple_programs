@@ -5,12 +5,12 @@ package Shapes_Line is
    type Line_Straight is record
       A: Point;
       B: Point;
-   end record;
+   end record with Dynamic_Predicate => Get_Line_Length(Line_Straight.A, Line_Straight.B) > 0.0;
 
    --
    -- function to compute line length beyween 2 given points
    --
-   function Get_Line_Length (A : Point; B : Point) return Float;
+   function Get_Line_Length (A : Point; B : Point) return Float with Post => Get_Line_Length'Result > 0.0;
    --
    -- function that test if two lines intersect each other
    --
